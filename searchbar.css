@@ -1,0 +1,37 @@
+
+/* Sliding Search Bar */
+.sliding-search-bar {
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-left:  auto;
+	overflow: hidden;
+	width: 50px; /* Initial width for button only */
+	transition: width 0.4s ease;
+}
+
+.search-form {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.toggle-search-button {
+	background: transparent; /* Button color */
+	color: white;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	padding: 10px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	transition: background 0.3s ease;
+	z-index: 1; /* Keep button above field during animation */
+}
+
+.toggle-search-button svg {
+	fill: white;
+	width: 20px;
+	height: 20px;
+}
